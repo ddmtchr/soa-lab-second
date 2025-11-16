@@ -187,7 +187,7 @@ public class KillerController {
                                                 <error>
                                                   <status>CONFLICT</status>
                                                   <timestamp>2025-09-14T11:58:48.0675202</timestamp>
-                                                  <path>//soa/api/v1/killer/team/1/move-to-cave/1</path>
+                                                  <path>/soa/api/v1/killer/team/1/move-to-cave/1</path>
                                                   <messages>
                                                     <message>Team is already in specified cave</message>
                                                   </messages>
