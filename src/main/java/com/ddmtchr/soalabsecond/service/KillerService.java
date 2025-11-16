@@ -44,7 +44,7 @@ public class KillerService {
         TeamResponseDto team = teamClient.getById(teamId);
         CaveResponseDto cave = caveClient.getById(caveId);
 
-        if (team.getCave().getId().equals(caveId)) {
+        if (team.getCave() != null && team.getCave().getId().equals(caveId)) {
             throw new ConflictException(List.of("Team is already in specified cave"));
         }
 
