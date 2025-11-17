@@ -68,7 +68,8 @@ public abstract class CrudClient<REQ, RESP> {
                 .uri(apiPath + "/{id}", id)
                 .accept(MediaType.APPLICATION_XML)
                 .retrieve()
-                .onStatus(HttpStatusCode::isError, errorHandler());
+                .onStatus(HttpStatusCode::isError, errorHandler())
+                .body(Void.class);
     }
 
     protected RestClient.ResponseSpec.ErrorHandler errorHandler() {
